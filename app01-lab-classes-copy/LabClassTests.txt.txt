@@ -1,0 +1,29 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th of September 2020");
+Student will = new Student("Will", "1234");
+Student katie = new Student("Katie", "2345");
+Student james = new Student("James", "3456");
+co452Lab.enrollStudent(will);
+co452Lab.enrollStudent(katie);
+co452Lab.enrollStudent(james);
+co452Lab.printList();
+Lab class Tuesday 29th of September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will, student ID: 1234, credits: 0
+Katie, student ID: 2345, credits: 0
+James, student ID: 3456, credits: 0
+Number of students: 3
+katie.addCredits(20);
+james.addCredits(20);
+will.addCredits(20);
+co452Lab.printList();
+Lab class Tuesday 29th of September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will, student ID: 1234, credits: 20
+Katie, student ID: 2345, credits: 20
+James, student ID: 3456, credits: 20
+Number of students: 3
