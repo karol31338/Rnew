@@ -1,100 +1,31 @@
-import java.util.*;
 
 /**
- * The LabClass class represents an enrolment list for one lab class. It stores
- * the time, room and participants of the lab, as well as the instructor's name.
- * 
- * @author Michael Kölling and David Barnes
- * @version 2016.02.29
- * modified by Karolina Berdyszak
- * dated 05/Oct/2020
+ * Write a description of class Course here.
+ *
+ * @author Karolina Berdyszak
+ * @version 2020.10.06
  */
 public class Course
 {
-    private String instructor;
-    private String room;
-    private String timeAndDay;
+    // Attribute,field,variable
+    private String title;
     
-    private ArrayList<Student> students;
-    private int capacity;
+    private String CodeNo;
     
-    /**
-     * Create a Course with a maximum number of enrolments. All other details
-     * are set to default values.
-     */
-    public Course(int maxNumberOfStudents)
-    {
-        instructor = "unknown";
-        room = "unknown";
-        timeAndDay = "unknown";
-        
-        students = new ArrayList<Student>();
-        capacity = maxNumberOfStudents;
-    }
+    
 
     /**
-     * Add a student to this Course.
+     * Constructor for objects of class Course
      */
-    public void enrollStudent(Student newStudent)
+    public Course(String title, String code)
     {
-        if(students.size() == capacity) 
-        {
-            System.out.println("The class is full, you cannot enrol.");
-        }
-        else 
-        {
-            students.add(newStudent);
-        }
+        this.title = title;
+        this.CodeNo = code;
     }
     
-    /**
-     * Return the number of students currently enrolled in this Course.
-     */
-    public int numberOfStudents()
+    public void print()
     {
-        return students.size();
-    }
-    
-    /**
-     * Set the room number for this Course.
-     */
-    public void setRoom(String roomNumber)
-    {
-        room = roomNumber;
-    }
-    
-    /**
-     * Set the time for this Course. The parameter should define the day
-     * and the time of day, such as "Friday, 10am".
-     */
-    public void setTime(String timeAndDayString)
-    {
-        timeAndDay = timeAndDayString;
-    }
-    
-    /**
-     * Set the name of the instructor for this Course.
-     */
-    public void setInstructor(String instructorName)
-    {
-        instructor = instructorName;
-    }
-    
-    /**
-     * Print out a class list with other Cours details to the standard
-     * terminal.
-     */
-    public void printList()
-    {
-        System.out.println("Course " + timeAndDay);
-        System.out.println("Instructor: " + instructor + "   Room: " + room);
-        System.out.println("Class list:");
-        
-        for(Student student : students) 
-        {
-            student.print();
-        }
-        
-        System.out.println("Number of students: " + numberOfStudents());
-    }
+                System.out.println("Course;" +title + ", CodeNo " + CodeNo);
+            }
+
 }
