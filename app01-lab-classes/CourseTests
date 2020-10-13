@@ -1,0 +1,77 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Number of students: 0
+Student will = new Student("Will Smith", "1234");
+Student katie = new Student("Katie Johnson", "2345");
+Student james = new Student("James Trump", "3456");
+will.addCredits(20);
+will.changeName("Will Smith");
+will.changeName("will");
+will.getName()
+    returned String "will"
+will.changeName("Will James");
+katie.addCredits(20);
+james.addCredits(20);
+Course computing = new Course("Computing", "G100");
+co452Lab.enrollStudent(will);
+co452Lab.enrollStudent(katie);
+co452Lab.enrollStudent(james);
+co452Lab.numberOfStudents()
+    returned int 3
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th of September 2020");
+co452Lab.printList();
+Lab class Tuesday 29th of September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will James, student ID: , credits: , course: 
+    Exception occurred.
+co452Lab.printList();
+Lab class Tuesday 29th of September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will James, student ID: , credits: , course: 
+    Exception occurred.
+LabClass co452Lab = new LabClass(3);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29/10/2020");
+Student will = new Student("Will James", "123456789");
+will.addCredits(20);
+Student katie = new Student("Katie Johnson", "234567890");
+katie.addCredits(20);
+Student james = new Student("James Trump", "345678901");
+james.addCredits(20);
+co452Lab.enrollStudent(will);
+co452Lab.enrollStudent(katie);
+co452Lab.enrollStudent(james);
+co452Lab.printList();
+Lab class Tuesday 29/10/2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will James, student ID: 123456789, credits: 20
+    Exception occurred.
+Course computing = new Course("Computing", "G123");
+computing.getCodeNumber()
+    returned String "Computing"
+computing.getTitle()
+    returned String "G123"
+Course computing = new Course("G123", "Computing");
+will.addCourse(computing);
+katie.addCourse(computing);
+james.addCourse(computing);
+co452Lab.printList();
+Lab class Tuesday 29/10/2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Will James, student ID: 123456789, credits: 20
+Code number is: G123 and course title: Computing
+Katie Johnson, student ID: 234567890, credits: 20
+Code number is: G123 and course title: Computing
+James Trump, student ID: 345678901, credits: 20
+Code number is: G123 and course title: Computing
+Number of students: 3

@@ -6,9 +6,11 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
- * modified by Karolina Berdyszak
- * dated 11/10/2020
+ * modified by Derek Peacock
+ * dated 27/Sep/2020
+ * modified by Nick Day
  */
+
 public class LabClass
 {
     private String instructor;
