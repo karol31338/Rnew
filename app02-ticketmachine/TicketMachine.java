@@ -7,9 +7,8 @@
  * if enough money has been input.
  * 
  * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
- * 
- * Modified by Student Name
+ * @version 2011.07.31
+ * modified by Karolina Berdyszak
  */
 public class TicketMachine
 {
@@ -53,12 +52,10 @@ public class TicketMachine
      */
     public void insertMoney(int amount)
     {
-        if(amount > 0) 
-        {
+        if(amount > 0) {
             balance = balance + amount;
         }
-        else 
-        {
+        else {
             System.out.println("Use a positive amount rather than: " +
                                amount);
         }
@@ -71,11 +68,11 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) 
-        {
+        int amountLeftToPay = price - balance;
+        if (amountLeftToPay <=0) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
-            System.out.println("# The BlueJ Line");
+            System.out.println("# Metro One");
             System.out.println("# Ticket");
             System.out.println("# " + price + " cents.");
             System.out.println("##################");
@@ -83,15 +80,39 @@ public class TicketMachine
 
             // Update the total collected with the price.
             total = total + price;
-            // Reduce the balance by the price.
+            // Reduce the balance by the prince.
             balance = balance - price;
         }
-        else 
-        {
-            System.out.println("You must insert at least: " +
+        
+
+      
+        
+ else {
+            System.out.println("sorry, insufficient amount paid \n Your balance is: = " + amountLeftToPay + "cents.");
+        }
+            /* if (balance >= price) {
+         if (amountLeftToPay <=0){
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# Metro One");
+            System.out.println("# Ticket");
+            System.out.println("# " + price + " cents.");
+            System.out.println("##################");
+            System.out.println();
+
+            // Update the total collected with the price.
+            total = total + price;
+            // Reduce the balance by the prince.
+            balance = balance - price;
+        }*\
+              
+          else {
+        System.out.println("You must insert at least: " +
                                (price - balance) + " more cents.");
                     
-        }
+        }*/
+        
+        
     }
 
     /**
@@ -105,4 +126,24 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
+          public enum Coin
+    {
+        P10 (10),
+        P20 (20),
+        P100 (100),
+        P200 (200);
+
+        private final int value;
+
+        private Coin(int value)
+        {
+            this.value = value;
+        }
+
+        public int getValue()
+        {
+            return value;
+        }
+     }
 }
