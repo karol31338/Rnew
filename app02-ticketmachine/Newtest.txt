@@ -1,0 +1,62 @@
+TicketMachine ticketMa2 = new TicketMachine();
+ticketMa2.selectAmershamTicket();
+ticketMa2.insert200p();
+You need inserted at least
+Your balance = 200
+ticketMa2.insert10p();
+You need inserted at least
+Your balance = 210
+ticketMa2.insert20p();
+You need inserted at least
+Your balance = 230
+ticketMa2.printTicket();
+You must insert no less than: 70 more cents.
+ticketMa2.insert100p();
+You need inserted at least
+Your balance = 330
+ticketMa2.printTicket();
+##################
+# MetroExpress
+# Ticket
+TicketAmershamPrice:300IssuedSat Oct 24 23:20:20 BST 2020
+# 300 pence.
+##################
+
+ticketMa2.selectAylesburyTicket();
+ticketMa2.insert200p();
+You need inserted at least
+Your balance = 230
+ticketMa2.insert100p();
+You need inserted at least
+Your balance = 330
+ticketMa2.printTicket();
+##################
+# MetroExpress
+# Ticket
+TicketAylesburyPrice:220IssuedSat Oct 24 23:20:20 BST 2020
+# 220 pence.
+##################
+
+ticketMa2.selectHighWycombeTicket();
+ticketMa2.insert100p();
+You need inserted at least
+Your balance = 210
+ticketMa2.printTicket();
+You must insert no less than: 120 more cents.
+ticketMa2.insert100p();
+You need inserted at least
+Your balance = 310
+ticketMa2.insert10p();
+You need inserted at least
+Your balance = 320
+ticketMa2.insert10p();
+You need inserted at least
+Your balance = 330
+ticketMa2.printTicket();
+##################
+# MetroExpress
+# Ticket
+TicketHigh WycombePrice:330IssuedSat Oct 24 23:20:20 BST 2020
+# 330 pence.
+##################
+
