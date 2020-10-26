@@ -1,0 +1,54 @@
+Student peter = new Student("Peter Trump", "123456");
+Course programming = new Course("CO452", "Programming");
+peter.addCredits(20);
+peter.enrolOnCourse(programming);
+Module math = new Module("Mathematic", "CO421", 56);
+math.awardMark(56);
+Module marketing = new Module("Marketing", "MK321", 21);
+marketing.awardMark(76);
+Module business = new Module("Business", "BU468", 19);
+Module digitaltechnologies = new Module("Digital Technologies", "CO564", 4);
+math.getmark()
+    returned int 56
+math.print();
+Module: CO421 Mathematic Mark = 56
+marketing.print();
+Module: MK321 Marketing Mark = 76
+business.print();
+Module: BU468 Business Mark = 19
+digitaltechnologies.print();
+Module: CO564 Digital Technologies Mark = 4
+programming.addModule(math);
+programming.addModule(marketing);
+programming.addModule(business);
+programming.addModule(digitaltechnologies);
+programming.courseSummary();
+ module1marks 77
+ module2marks 85
+ module3marks 44
+ module4marks 56
+coursegradesB
+programming.print();
+Course:Programming, Code Number:CO452
+Module: CO452 Programming Concepts Mark = 77
+Module: CO453 Mathematic Mark = 85
+Module: CO454 Web Development Mark = 44
+Module: CO455 Digital Technologies Mark = 56
+programming.calculategrade()
+    returned Object B
+programming.print();
+Course:Programming, Code Number:CO452
+Module: CO452 Programming Concepts Mark = 77
+Module: CO453 Mathematic Mark = 85
+Module: CO454 Web Development Mark = 44
+Module: CO455 Digital Technologies Mark = 56
+peter.print();
+Student Name:Peter Trump
+Student id:123456
+Student credits:20
+peter.printFinalGrade();
+ module1marks 77
+ module2marks 85
+ module3marks 44
+ module4marks 56
+coursegradesB
