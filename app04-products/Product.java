@@ -1,8 +1,10 @@
 /**
  * Model some details of a product sold by a company.
- * 
+ *
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * @modyfied by Karolina Berdyszak
+ * @version 1/11/2020
  */
 public class Product
 {
@@ -64,16 +66,16 @@ public class Product
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void increaseQuantity(int amount)
+    public void increaseQuantity(int amount) //podpunkt 1.
     {
-        if(amount > 0) 
+        if(amount > 0)
         {
             quantity += amount;
         }
-        else 
+        else
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+                    " with a non-positive amount: " + amount);
         }
     }
 
@@ -81,16 +83,34 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sellOne() //podpunkt 3.
     {
-        if(quantity > 0) 
+        if(quantity > 0)
         {
             quantity--;
         }
-        else 
+        else
         {
             System.out.println(
-                "Attempt to sell an out of stock item: " + name);
+                    "Attempt to sell an out of stock item: " + name);
         }
     }
+
+    //Start GetterSetterExtension Source Code
+    public void setName(String name)
+    {
+        this.name = name;
+    }//end method setName
+
+    //End GetterSetterExtension Source Code
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public void setQuantity(int quantity)
+    {
+        this.quantity = quantity;
+    }
+//!
 }
