@@ -29,13 +29,21 @@ public class StockManager
         stock.add(item);
     }
 
-    public void renameProduct(Product item, String newName) 
+    public void renameProduct(String newName, int id) 
     {
-        item.setName(newName);
+        Product item = findProduct(id);
+        for(Product product : stock)
+            {
+                if(product.getID() == item.getID())
+                {
+                    product.setName(newName);
+                }
+            }
     }
 
-    public void removeProduct(Product item) 
+    public void removeProduct(int id) 
     {
+        Product item = findProduct(id);
         stock.remove(item);
     }
 
