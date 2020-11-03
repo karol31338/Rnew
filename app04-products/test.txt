@@ -1,0 +1,199 @@
+1234: apple stock level: 0
+11
+2345: banana stock level: 20
+11
+3456: avocado stock level: 30
+11
+4567: tomato stock level: 40
+11
+5678: strawberry stock level: 50
+11
+6789: raspberry stock level: 60
+11
+7890: pumpkin stock level: 70
+11
+8901: cherry stock level: 80
+11
+9012: peach stock level: 90
+11
+4321: blackberry stock level: 0
+11
+8575: vanilla stock level: 1
+11
+1234: apple stock level: 0
+Attempt to sell an out of stock item: apple
+1234: apple stock level: 0
+2345: banana stock level: 20
+2345: banana stock level: 19
+3456: avocado stock level: 30
+3456: avocado stock level: 29
+4567: tomato stock level: 40
+4567: tomato stock level: 39
+5678: strawberry stock level: 50
+5678: strawberry stock level: 49
+6789: raspberry stock level: 60
+6789: raspberry stock level: 59
+7890: pumpkin stock level: 70
+7890: pumpkin stock level: 69
+8901: cherry stock level: 80
+8901: cherry stock level: 79
+9012: peach stock level: 90
+9012: peach stock level: 89
+demo1.getManager()
+    returned Object <object reference>
+demo1.runDemo();
+1234: apple stock level: 0
+11
+2345: banana stock level: 19
+11
+3456: avocado stock level: 29
+11
+4567: tomato stock level: 39
+11
+5678: strawberry stock level: 49
+11
+6789: raspberry stock level: 59
+11
+7890: pumpkin stock level: 69
+11
+8901: cherry stock level: 79
+11
+9012: peach stock level: 89
+11
+4321: blackberry stock level: 0
+11
+8575: vanilla stock level: 1
+11
+1234: apple stock level: 0
+11
+2345: banana stock level: 19
+11
+3456: avocado stock level: 29
+11
+4567: tomato stock level: 39
+11
+5678: strawberry stock level: 49
+11
+6789: raspberry stock level: 59
+11
+7890: pumpkin stock level: 69
+11
+8901: cherry stock level: 79
+11
+9012: peach stock level: 89
+11
+4321: blackberry stock level: 0
+11
+8575: vanilla stock level: 1
+11
+Attempt to restock apple with a non-positive amount: 0
+Product Delivered : 1234: apple stock level: 0
+Product Delivered : 2345: banana stock level: 39
+Product Delivered : 3456: avocado stock level: 59
+Product Delivered : 4567: tomato stock level: 79
+Product Delivered : 5678: strawberry stock level: 99
+Product Delivered : 6789: raspberry stock level: 119
+Product Delivered : 7890: pumpkin stock level: 139
+Product Delivered : 8901: cherry stock level: 159
+Product Delivered : 9012: peach stock level: 179
+Product ID 83 NOT FOUND!!!
+1234: apple stock level: 0
+11
+2345: banana stock level: 39
+11
+3456: avocado stock level: 59
+11
+4567: tomato stock level: 79
+11
+5678: strawberry stock level: 99
+11
+6789: raspberry stock level: 119
+11
+7890: pumpkin stock level: 139
+11
+8901: cherry stock level: 159
+11
+9012: peach stock level: 179
+11
+4321: blackberry stock level: 0
+11
+8575: vanilla stock level: 1
+11
+smanager.printLowStockLevels();
+Low stock level: 1234: apple stock level: 0
+Low stock level: 4321: blackberry stock level: 0
+Low stock level: 8575: vanilla stock level: 1
+smanager.removeProduct(4567);
+smanager.renameProduct("orange", 8575);
+demo1.runDemo();
+1234: apple stock level: 0
+10
+2345: banana stock level: 39
+10
+3456: avocado stock level: 59
+10
+5678: strawberry stock level: 99
+10
+6789: raspberry stock level: 119
+10
+7890: pumpkin stock level: 139
+10
+8901: cherry stock level: 159
+10
+9012: peach stock level: 179
+10
+4321: blackberry stock level: 0
+10
+8575: orange stock level: 1
+10
+1234: apple stock level: 0
+10
+2345: banana stock level: 39
+10
+3456: avocado stock level: 59
+10
+5678: strawberry stock level: 99
+10
+6789: raspberry stock level: 119
+10
+7890: pumpkin stock level: 139
+10
+8901: cherry stock level: 159
+10
+9012: peach stock level: 179
+10
+4321: blackberry stock level: 0
+10
+8575: orange stock level: 1
+10
+Attempt to restock apple with a non-positive amount: 0
+Product Delivered : 1234: apple stock level: 0
+Product Delivered : 2345: banana stock level: 59
+Product Delivered : 3456: avocado stock level: 89
+Product ID 4567 NOT FOUND!!!
+Product Delivered : 5678: strawberry stock level: 149
+Product Delivered : 6789: raspberry stock level: 179
+Product Delivered : 7890: pumpkin stock level: 209
+Product Delivered : 8901: cherry stock level: 239
+Product Delivered : 9012: peach stock level: 269
+Product ID 83 NOT FOUND!!!
+1234: apple stock level: 0
+10
+2345: banana stock level: 59
+10
+3456: avocado stock level: 89
+10
+5678: strawberry stock level: 149
+10
+6789: raspberry stock level: 179
+10
+7890: pumpkin stock level: 209
+10
+8901: cherry stock level: 239
+10
+9012: peach stock level: 269
+10
+4321: blackberry stock level: 0
+10
+8575: orange stock level: 1
+10

@@ -30,7 +30,12 @@ public class StockDemo
         manager.addProduct(new Product(7890, "pumpkin"));
         manager.addProduct(new Product(8901, "cherry"));
         manager.addProduct(new Product(9012, "peach"));
-        manager.addProduct(new Product(0123, "blackberry"));
+        manager.addProduct(new Product(4321, "blackberry"));
+    }
+    public void runDemo()
+    {
+        manager.printAllProducts();
+        demoDelivery();
     }
 
     /**
@@ -43,7 +48,7 @@ public class StockDemo
         // Show details of all of the products.
         manager.printAllProducts();
         // Take delivery of 5 items of one of the products.
-        manager.delivery(1234, 10);
+        manager.delivery(1234, 0);
         manager.delivery(2345, 20);
         manager.delivery(3456, 30);
         manager.delivery(4567, 40);
