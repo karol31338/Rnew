@@ -29,6 +29,11 @@ public class StockManager
         stock.add(item);
     }
     
+    public void removeProduct(Product item)
+    {
+        stock.remove(item);
+    }
+    
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -99,6 +104,17 @@ public class StockManager
         
         return null;
     }
+    public boolean isDuplicateID(int id)
+    {
+        for(Product product : stock)
+        {
+            if(product.getID() == id)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     
     /**
      * Locate a product with the given ID, and return how
@@ -130,5 +146,29 @@ public class StockManager
         System.out.println("\n==============================");
         System.out.println(" Karolina's Stock List");
         System.out.println("==============================\n");
+    }
+    
+    public void searchProducts(String targetPhrase)
+    {
+        for(Product product : stock)
+            for(int i = 0; i < product.getName().length(); i++)
+                if(targetPhrase.indexOf(product.getName()) == i)
+                {
+                    System.out.println(product.getName());
+                }
+    }
+    
+    public void printLowStockLevels() 
+        {
+            for (Product product : stock)
+                if(product.getQuantity() < 5)
+                    System.out.println("Low stock level: " + product);
+        }
+        
+    public void restockLowProducts()
+    {
+        for(Product product : stock)
+            if(product.getQuantity() < 5)
+                product.increaseQuantity(10);
     }
 }

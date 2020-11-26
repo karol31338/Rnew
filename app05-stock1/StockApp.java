@@ -9,12 +9,12 @@
  */
 public class StockApp
 {
-    public static final char CLEAR_CODE = '\u000C';
+    //public static final char CLEAR_CODE = '\u000C';
     
-    public static final String QUIT = "quit";
-    public static final String ADD = "add";
-    public static final String PRINT_ALL = "printall";
-    public static final String DELIVER = "deliver";
+    //public static final String QUIT = "quit";
+    //public static final String ADD = "add";
+    //public static final String PRINT_ALL = "printall";
+    //public static final String DELIVER = "deliver";
     
     // Use to get user input
     private InputReader input = new InputReader();
@@ -37,7 +37,7 @@ public class StockApp
            
             String choice = input.getString().toLowerCase();
             
-            if(choice.equals(QUIT))
+            if(choice.equals("quit"))
                 finished = true;
             else
                 executeMenuChoice(choice);
@@ -46,34 +46,39 @@ public class StockApp
     
     private void executeMenuChoice(String choice)
     {
-        if(choice.equals(ADD))
+        if(choice.equals("add"))
         {
             addProduct();
         }
-        else if(choice.equals(PRINT_ALL))
+        else if(choice.equals("printall"))
         {
             manager.printAllProducts();
             String value = input.getString();
         }
-    }
-    
-    private void executeDeliverProduct(int id, int amount)
-    {
-        manager.deliverProduct(id, amount);
-    }
-    
-    private void executeSellProduct(int id, int amount)
-    {
-        manager.sellProduct(id, amount);
-    }
-    
-    private void executeSearch(String name)
-    {
-        for(Product product : stock)
-            if(product.getName() == name)
-            {
-                System.out.println(product.getName());
-            }
+        else if(choice.equals("deliver"))
+        {
+            deliverProduct();
+        }
+        else if(choice.equals("sell"))
+        {
+            sellProduct();
+        }
+        else if(choice.equals("search"))
+        {
+            searchProducts();
+        }
+        else if(choice.equals("lowstock"))
+        {
+            manager.printLowStockLevels();
+        }
+        else if(choice.equals("restock"))
+        {
+            manager.restockLowProducts();
+        }
+        else
+        {
+            System.out.println("Wrong choice");
+        }
     }
     
     private void addProduct()
@@ -88,9 +93,79 @@ public class StockApp
         String name = input.getString();
         
         Product product = new Product(id, name);
-        manager.addProduct(product);
+        if(manager.isDuplicateID(id) == false)
+            manager.addProduct(product);
+        else
+            System.out.println("ID duplicated");
         
         System.out.println("\n You have added " + product);
+        System.out.println();
+    }
+    
+    private void removeProduct()
+    {
+        System.out.println("Removing product\n");
+        
+        System.out.println("Please enter the product ID");
+        String value = input.getString();
+        int id = Integer.parseInt(value);
+        
+        System.out.println("Please enter the name of the product");
+        String name = input.getString();
+        
+        Product product = new Product(id, name);
+        manager.removeProduct(product);
+        
+        System.out.println("\n You have removed " + product);
+        System.out.println();
+    }
+    
+    private void deliverProduct()
+    {
+        System.out.println("Delivering product\n");
+        
+        System.out.println("Please enter the product ID");
+        String value = input.getString();
+        int id = Integer.parseInt(value);
+        
+        System.out.println("Please enter the amount of the product");
+        String val = input.getString();
+        int amount = Integer.parseInt(val);
+        
+        manager.deliverProduct(id, amount);
+        
+        System.out.println("\n You have delivered " + amount +
+            " items of prooduct id: " + id);
+        System.out.println();
+    }
+    
+    private void sellProduct()
+    {
+        System.out.println("Selling product\n");
+        
+        System.out.println("Please enter the product ID");
+        String value = input.getString();
+        int id = Integer.parseInt(value);
+        
+        System.out.println("Please enter the amount of the product");
+        String val = input.getString();
+        int amount = Integer.parseInt(val);
+        
+        manager.sellProduct(id, amount);
+        
+        System.out.println("\n You have sold " + amount +
+            " items of prooduct id: " + id);
+        System.out.println();
+    }
+    
+    private void searchProducts()
+    {
+        System.out.println("Searching products\n");
+        
+        System.out.println("Please enter the target phrase");
+        String targetPhrase = input.getString();
+        
+        manager.searchProducts(targetPhrase);
         System.out.println();
     }
     
