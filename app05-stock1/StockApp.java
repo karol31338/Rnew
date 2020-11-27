@@ -55,6 +55,10 @@ public class StockApp
             manager.printAllProducts();
             String value = input.getString();
         }
+        else if(choice.equals("remove"))
+        {
+            removeProduct();
+        }
         else if(choice.equals("deliver"))
         {
             deliverProduct();
@@ -93,11 +97,12 @@ public class StockApp
         String name = input.getString();
         
         Product product = new Product(id, name);
-        if(manager.isDuplicateID(id) == false)
-            manager.addProduct(product);
-        else
+        if(manager.isDuplicateID(id) == true)
             System.out.println("ID duplicated");
-        
+        else if(manager.isBlankName(product) == true)
+            System.out.println("Blank name");
+        else
+            manager.addProduct(product);
         System.out.println("\n You have added " + product);
         System.out.println();
     }

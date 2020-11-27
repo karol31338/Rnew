@@ -62,7 +62,6 @@ public class StockManager
     public void sellProduct(int id, int amount)
     {
         Product product = findProduct(id);
-        
         if(product != null) 
         {
             printDetails(id);
@@ -104,6 +103,7 @@ public class StockManager
         
         return null;
     }
+    
     public boolean isDuplicateID(int id)
     {
         for(Product product : stock)
@@ -114,6 +114,14 @@ public class StockManager
             }
         }
         return false;
+    }
+    
+    public boolean isBlankName(Product item)
+    {
+        if(item.getName() == " ")
+            return true;
+        else
+            return false;
     }
     
     /**
