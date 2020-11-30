@@ -3,6 +3,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * @modyfied by Karolina
+ * @version 1
  */
 public class Product
 {

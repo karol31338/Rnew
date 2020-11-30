@@ -4,8 +4,8 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
- * @version 0.1
+ * @author Karolina
+ * @version 1
  */
 public class StockApp
 {
@@ -43,6 +43,8 @@ public class StockApp
                 executeMenuChoice(choice);
         }
     }
+    
+   
     
     private void executeMenuChoice(String choice)
     {
@@ -182,8 +184,12 @@ public class StockApp
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
-        System.out.println("    PrintAll:   Print all products");
+        System.out.println("    Sell:       Sell a product");
+        System.out.println("    Restock:    Restock a product");
+        System.out.println("    LowStock:   Low stock List");
         System.out.println("    Deliver:    Deliver a quantity of product");
+        System.out.println("    Search:     Search a product");
+        System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }

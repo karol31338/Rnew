@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Karolina Berdyszak 
+ * @version 1
  */
 public class StockManager
 {
@@ -118,7 +118,7 @@ public class StockManager
     
     public boolean isBlankName(Product item)
     {
-        if(item.getName() == " ")
+        if(item.getName() == "")
             return true;
         else
             return false;
@@ -156,17 +156,17 @@ public class StockManager
         System.out.println("==============================\n");
     }
     
-    public void searchProducts(String targetPhrase)
-    {
-        for(Product product : stock)
-            for(int i = 0; i < product.getName().length(); i++)
-                if(targetPhrase.indexOf(product.getName()) == i)
-                {
-                    System.out.println(product.getName());
-                }
-    }
-    
-    public void printLowStockLevels() 
+public void searchProducts(String targetPhrase)
+{
+int intIndex = 0;
+for(Product product : stock)
+{
+intIndex = product.getName().indexOf(targetPhrase);
+if(intIndex != -1)
+System.out.println(product.getName());
+}
+}
+   public void printLowStockLevels() 
         {
             for (Product product : stock)
                 if(product.getQuantity() < 5)

@@ -7,6 +7,8 @@ import java.util.Scanner;
  * 
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
+ * @modyfied by Karolina
+ * @version 1
  */
 public class InputReader
 {
@@ -32,5 +34,26 @@ public class InputReader
         String inputLine = reader.nextLine();
 
         return inputLine;
+    }
+    public int getInt(String prompt)
+    {
+        boolean isValid = false;
+        int number = 0;
+
+        while(!isValid)
+        {
+            try
+            {
+                System.out.println(prompt);
+                String value = reader.nextLine();
+                number = Integer.parseInt(value);
+                isValid = true; 
+            }
+            catch (Exception e)
+            {
+                System.out.println("Invalid interger!");
+            }
+        }
+        return number;
     }
 }
