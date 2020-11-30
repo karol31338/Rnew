@@ -1,0 +1,196 @@
+Quit
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 111
+Please enter the name of the product
+> Samsung Galaxy S10
+ID duplicated
+
+ You have added 111: Samsung Galaxy S10 stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 112
+Please enter the name of the product
+> Samsung Galaxy S20
+ID duplicated
+
+ You have added 112: Samsung Galaxy S20 stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 113
+Please enter the name of the product
+> Apple iPhone 11
+
+ You have added 113: Apple iPhone 11 stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 114
+Please enter the name of the product
+> Apple iPhone 12
+
+ You have added 114: Apple iPhone 12 stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 115
+Please enter the name of the product
+> Motorola G9 Plus
+
+ You have added 115: Motorola G9 Plus stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 103
+Please enter the name of the product
+> New Product
+ID duplicated
+
+ You have added 103: New Product stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Adding new product
+
+Please enter the product ID
+> 116
+Please enter the name of the product
+> 
+
+ You have added 116:  stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> 

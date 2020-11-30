@@ -1,0 +1,200 @@
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Deliver
+Delivering product
+
+Please enter the product ID
+> 112
+Please enter the amount of the product
+> 8
+Product Delivered : 112: Google Pixel 4A stock level: 8
+
+ You have delivered 8 items of prooduct id: 112
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Deliver
+Delivering product
+
+Please enter the product ID
+> 112
+Please enter the amount of the product
+> -4
+Attempt to restock Google Pixel 4A with a non-positive amount: -4
+Product Delivered : 112: Google Pixel 4A stock level: 8
+
+ You have delivered -4 items of prooduct id: 112
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+Selling product
+
+Please enter the product ID
+> 112
+Please enter the amount of the product
+> 2
+112: Google Pixel 4A stock level: 8
+Sold 2 of Google Pixel 4A
+112: Google Pixel 4A stock level: 6
+
+ You have sold 2 items of prooduct id: 112
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+Selling product
+
+Please enter the product ID
+> 112
+Please enter the amount of the product
+> 10
+112: Google Pixel 4A stock level: 6
+Insufficient Stock = 6 amount ordered = 10
+112: Google Pixel 4A stock level: 0
+
+ You have sold 10 items of prooduct id: 112
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Sell
+Selling product
+
+Please enter the product ID
+> 112
+Please enter the amount of the product
+> -2
+112: Google Pixel 4A stock level: 0
+Attempt to sell an out of stock item: Google Pixel 4A
+112: Google Pixel 4A stock level: 0
+
+ You have sold -2 items of prooduct id: 112
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Search
+Searching products
+
+Please enter the target phrase
+> Samsung
+Samsung Galaxy S20
+Samsung Galaxy S20
+Samsung Galaxy S20
+Samsung Galaxy S20
+
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> LowStock
+Low stock level: 101: Samsung Galaxy S20 stock level: 0
+Low stock level: 102: Apple iPhone 12 stock level: 0
+Low stock level: 103: Google Pixel 4A stock level: 0
+Low stock level: 104: Samsung Galaxy S20 stock level: 0
+Low stock level: 105: Apple iPhone 12 stock level: 0
+Low stock level: 106: Google Pixel 4A stock level: 0
+Low stock level: 107: Samsung Galaxy S20 stock level: 0
+Low stock level: 108: Apple iPhone 12 stock level: 0
+Low stock level: 109: Google Pixel 4A stock level: 0
+Low stock level: 110: Samsung Galaxy S20 stock level: 0
+Low stock level: 111: Apple iPhone 12 stock level: 0
+Low stock level: 112: Google Pixel 4A stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Karolina
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Restock:    Restock a product
+    LowStock:   Low stock List
+    Deliver:    Deliver a quantity of product
+    Search:     Search a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> 
