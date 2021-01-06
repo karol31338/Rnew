@@ -8,7 +8,7 @@ public class Map
     private ArrayList<Room> room;
 
     public Map()
-{
-    room = new ArrayList<Room>();
-}
+    {
+        room = new ArrayList<Room>();
+    }
 }

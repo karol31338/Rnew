@@ -1,14 +1,15 @@
 import java.util.HashMap;
 
 /**
- * This class is part of the "World of Zuul" application. 
+ * This class is part of the "World of Zuul" application.
  * "World of Zuul" is a very simple, text based adventure game.
- * 
+ *
  * This class holds an enumeration of all command words known to the game.
  * It is used to recognise commands as they are typed in.
  *
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
+ * @ modified by Karolina
  */
 
 public class CommandWords
@@ -23,10 +24,10 @@ public class CommandWords
     public CommandWords()
     {
         validCommands = new HashMap<>();
-        
-        for(CommandWord command : CommandWord.values()) 
+
+        for(CommandWord command : CommandWord.values())
         {
-            if(command != CommandWord.UNKNOWN) 
+            if(command != CommandWord.UNKNOWN)
             {
                 validCommands.put(command.toString(), command);
             }
@@ -42,19 +43,19 @@ public class CommandWords
     public CommandWord getCommandWord(String commandWord)
     {
         CommandWord command = validCommands.get(commandWord);
-        
-        if(command != null) 
+
+        if(command != null)
         {
             return command;
         }
-        else 
+        else
         {
             return CommandWord.UNKNOWN;
         }
     }
-    
+
     /**
-     * Check whether a given String is a valid command word. 
+     * Check whether a given String is a valid command word.
      * @return true if it is, false if it isn't.
      */
     public boolean isCommand(String aString)
@@ -62,24 +63,16 @@ public class CommandWords
         return validCommands.containsKey(aString);
     }
 
-    public void isRecognizedCommand(String commandWord)
-    {
-        private HashMap<String, CommandWord> recognizedCommands;
-        validCommands.forEach((k, v) -> {
-            if(isCommand(commandWord) == True)
-                recognizedCommands.put(commandWord.toString(), commandWord);
-                });
-    }
     /**
      * Print all valid commands to System.out.
      */
-    public void showAll() 
+    public void showAll()
     {
-        for(String command : validCommands.keySet()) 
+        for(String command : validCommands.keySet())
         {
             System.out.print(command + "  ");
         }
-        
+
         System.out.println();
     }
 }
