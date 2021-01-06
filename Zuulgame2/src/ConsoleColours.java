@@ -6,43 +6,43 @@
  */
 public class ConsoleColours
 {
-    public static final String ANSI_RESET  = "\u001B[0m";
+    public static final String ANSI_RESET  = "[0m";
 
-    public static final String ANSI_BLACK  = "\u001B[30m";
-    public static final String ANSI_RED    = "\u001B[31m";
-    public static final String ANSI_GREEN  = "\u001B[32m";
-    public static final String ANSI_YELLOW = "\u001B[33m";
-    public static final String ANSI_BLUE   = "\u001B[34m";
-    public static final String ANSI_PURPLE = "\u001B[35m";
-    public static final String ANSI_CYAN   = "\u001B[36m";
-    public static final String ANSI_WHITE  = "\u001B[37m";
+    public static final String ANSI_BLACK  = "[30m";
+    public static final String ANSI_RED    = "[31m";
+    public static final String ANSI_GREEN  = "[32m";
+    public static final String ANSI_YELLOW = "[33m";
+    public static final String ANSI_BLUE   = "[34m";
+    public static final String ANSI_PURPLE = "[35m";
+    public static final String ANSI_CYAN   = "[36m";
+    public static final String ANSI_WHITE  = "[37m";
 
-    public static final String ANSI_BRIGHT_BLACK  = "\u001B[90m";
-    public static final String ANSI_BRIGHT_RED    = "\u001B[91m";
-    public static final String ANSI_BRIGHT_GREEN  = "\u001B[92m";
-    public static final String ANSI_BRIGHT_YELLOW = "\u001B[93m";
-    public static final String ANSI_BRIGHT_BLUE   = "\u001B[94m";
-    public static final String ANSI_BRIGHT_PURPLE = "\u001B[95m";
-    public static final String ANSI_BRIGHT_CYAN   = "\u001B[96m";
-    public static final String ANSI_BRIGHT_WHITE  = "\u001B[97m";
+    public static final String ANSI_BRIGHT_BLACK  = "[90m";
+    public static final String ANSI_BRIGHT_RED    = "[91m";
+    public static final String ANSI_BRIGHT_GREEN  = "[92m";
+    public static final String ANSI_BRIGHT_YELLOW = "[93m";
+    public static final String ANSI_BRIGHT_BLUE   = "[94m";
+    public static final String ANSI_BRIGHT_PURPLE = "[95m";
+    public static final String ANSI_BRIGHT_CYAN   = "[96m";
+    public static final String ANSI_BRIGHT_WHITE  = "[97m";
 
-    public static final String ANSI_BG_BLACK  = "\u001B[40m";
-    public static final String ANSI_BG_RED    = "\u001B[41m";
-    public static final String ANSI_BG_GREEN  = "\u001B[42m";
-    public static final String ANSI_BG_YELLOW = "\u001B[43m";
-    public static final String ANSI_BG_BLUE   = "\u001B[44m";
-    public static final String ANSI_BG_PURPLE = "\u001B[45m";
-    public static final String ANSI_BG_CYAN   = "\u001B[46m";
-    public static final String ANSI_BG_WHITE  = "\u001B[47m";
+    public static final String ANSI_BG_BLACK  = "[40m";
+    public static final String ANSI_BG_RED    = "[41m";
+    public static final String ANSI_BG_GREEN  = "[42m";
+    public static final String ANSI_BG_YELLOW = "[43m";
+    public static final String ANSI_BG_BLUE   = "[44m";
+    public static final String ANSI_BG_PURPLE = "[45m";
+    public static final String ANSI_BG_CYAN   = "[46m";
+    public static final String ANSI_BG_WHITE  = "[47m";
 
-    public static final String ANSI_BRIGHT_BG_BLACK  = "\u001B[100m";
-    public static final String ANSI_BRIGHT_BG_RED    = "\u001B[101m";
-    public static final String ANSI_BRIGHT_BG_GREEN  = "\u001B[102m";
-    public static final String ANSI_BRIGHT_BG_YELLOW = "\u001B[103m";
-    public static final String ANSI_BRIGHT_BG_BLUE   = "\u001B[104m";
-    public static final String ANSI_BRIGHT_BG_PURPLE = "\u001B[105m";
-    public static final String ANSI_BRIGHT_BG_CYAN   = "\u001B[106m";
-    public static final String ANSI_BRIGHT_BG_WHITE  = "\u001B[107m";
+    public static final String ANSI_BRIGHT_BG_BLACK  = "[100m";
+    public static final String ANSI_BRIGHT_BG_RED    = "[101m";
+    public static final String ANSI_BRIGHT_BG_GREEN  = "[102m";
+    public static final String ANSI_BRIGHT_BG_YELLOW = "[103m";
+    public static final String ANSI_BRIGHT_BG_BLUE   = "[104m";
+    public static final String ANSI_BRIGHT_BG_PURPLE = "[105m";
+    public static final String ANSI_BRIGHT_BG_CYAN   = "[106m";
+    public static final String ANSI_BRIGHT_BG_WHITE  = "[107m";
 
     /**
      * Constructor for objects of class ConsoleColours
