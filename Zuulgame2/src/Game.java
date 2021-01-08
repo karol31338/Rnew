@@ -30,7 +30,6 @@ public class Game
 
     private Player player;
 
-    HashSet<String> items = new HashSet<String>();
 
 
     /**
@@ -163,9 +162,35 @@ public class Game
         if (nextRoom == null) {
             System.out.println("There is no door!");
         }
+        /*else if(nextRoom == map.getUni() || nextRoom == map.getPub())
+        {
+            if(!player.dontHaveItem("ID"))
+                System.out.println("You can't go to Uni and Pub without an ID");
+        }
+        else if(nextRoom == map.getCoffeeShop() || nextRoom == map.getPub())
+        {
+            if(!player.dontHaveItem("Money"))
+                System.out.println("You can't go to coffee shop and Pub without Money");
+        }
+        else if(nextRoom == map.getLibrary() && !player.dontHaveItem("Redbull"))
+            System.out.println("You can't go to Library without Redbull!");
+        else if(nextRoom == map.getLibrary() && !player.dontHaveItem("ID"))
+            System.out.println("You can't buy Redbull without an ID!");*/
         else {
             currentRoom = nextRoom;
             System.out.println(currentRoom.getLongDescription());
+            if(currentRoom == map.getWork())
+                player.grabItem("Money");
+            if(currentRoom == map.getPub() && !player.dontHaveItem("ID"))
+                player.grabItem("Redbull");
+            if(currentRoom == map.getPark())
+                player.lostItem("Money");
+            if(currentRoom == map.getFriendsHouse())
+                player.lostItem("ID");
+            if(currentRoom == map.getLibrary() && player.dontHaveItem("Redbull")) {
+                player.lostItem("Redbull");
+                player.increaseEnergy(10);
+            }
             player.increaseScore(5);
             player.decreaseEnergy(5);
         }

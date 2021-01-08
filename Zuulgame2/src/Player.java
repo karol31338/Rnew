@@ -19,9 +19,9 @@ public class Player
     {
         this.name = name;
         score = 0;
-        energy = 100;
+        energy = 150;
         items = new ArrayList<String>();
-        items.add("Item1");
+        items.add("ID");
     }
 
     /**
@@ -51,6 +51,33 @@ public class Player
         }
     }
 
+    public void grabItem(String item)
+    {
+        if(items.contains(item)){
+            System.out.println("You have already had this item in your inventory!");
+            }
+        else {
+            items.add(item);
+            System.out.println(item + " has been taken");
+        }
+    }
+
+    public void lostItem(String item)
+    {
+        if(items.contains(item)){
+            items.remove(item);
+            System.out.println("You have lost " + item + " from your inventory!");
+        }
+    }
+
+    public boolean dontHaveItem(String item)
+    {
+        if(!items.contains(item))
+            return false;
+        else
+            return true;
+    }
+
     public void resetScore()
     {
         score = 0;
@@ -62,6 +89,11 @@ public class Player
             score += amount;
     }
 
+    public void increaseEnergy(int amount)
+    {
+        energy += amount;
+    }
+
     public void resetEnergy()
     {
         energy = 0;
@@ -71,25 +103,5 @@ public class Player
     {
         if(amount > 0)
             energy -= amount;
-    }
-
-    /**
-     *
-     * @param count
-     */
-    public void setCount(int count)
-    {
-        this.count = count;
-    }
-
-    /**
-     *
-     */
-    public void print()
-    {
-        System.out.println("Player name : " + name);
-        System.out.println("Player score : " + score);
-        System.out.println("Player energy : " + energy);
-        System.out.println();
     }
 }

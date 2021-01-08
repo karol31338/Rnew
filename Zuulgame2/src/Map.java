@@ -49,13 +49,12 @@ public class Map
         home.setExit("west", pub);
         home.setExit("north", coffeeShop);
         home.setExit("east", uni);
-        home.setExit("south", friendsHouse);
     }
     public void createPub()
     {
         pub.setExit("east", home);
         pub.setExit("south", friendsHouse);
-        pub.setExit("west", coffeeShop);
+        pub.setExit("north", coffeeShop);
 
     }
     public void createUni()
@@ -100,6 +99,41 @@ public class Map
     public Room getHome()
     {
         return home;
+    }
+
+    public Room getWork()
+    {
+        return work;
+    }
+
+    public Room getPub()
+    {
+        return pub;
+    }
+
+    public Room getPark()
+    {
+        return park;
+    }
+
+    public Room getFriendsHouse()
+    {
+        return friendsHouse;
+    }
+
+    public Room getLibrary()
+    {
+        return library;
+    }
+
+    public Room getUni()
+    {
+        return uni;
+    }
+
+    public Room getCoffeeShop()
+    {
+        return coffeeShop;
     }
 }
 
