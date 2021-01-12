@@ -1,0 +1,30 @@
+Welcome to the World of Zuul!
+World of Zuul is a new, incredibly boring adventure game.
+Type 'help' if you need help.
+
+Hey, in this room you start the game- it is your home.
+Exits: east north west
+> help
+You are lost. You are alone. You wander
+around at the university.
+
+Your command words are:
+help  go  quit  items  room  player  
+> items
+Inventory:
+ID
+> room
+Now you are in: Home
+> go north
+You can't go to coffee shop and Pub without Money
+> player
+Player name : McCoy
+Player score : 0
+Player energy : 150
+
+> star
+I don't know what you mean...
+> quit
+Thank you for playing.  Good bye.
+
+Process finished with exit code 0

@@ -1,0 +1,61 @@
+Welcome to the World of Zuul!
+World of Zuul is a new, incredibly boring adventure game.
+Type 'help' if you need help.
+
+Hey, in this room you start the game- it is your home.
+Exits: east north west
+> go east
+Hey, in this room you will need study a little- Hello Uni.
+Exits: east south north west
+> player
+Player name : McCoy
+Player score : 5
+Player energy : 145
+
+> go north
+Hey, in this room you will be working- as you need money.
+Exits: east south west
+Money has been taken
+> player
+Player name : McCoy
+Player score : 10
+Player energy : 140
+
+> go west
+Hey, in this room it is Time for you to take a little break and a cup of coffee.
+Exits: east south west
+> player
+Player name : McCoy
+Player score : 15
+Player energy : 135
+
+> go west
+Hey, in this room it is time to chill after hard-work.
+Exits: east south north
+Redbull has been taken
+> player
+Player name : McCoy
+Player score : 20
+Player energy : 130
+
+> go south 
+Hey, in this room you visit your friend's house.
+Exits: east north
+You have lost ID from your inventory!
+> player
+Player name : McCoy
+Player score : 25
+Player energy : 125
+
+> go west
+There is no door!
+> go east
+Hey, in this room time to go to the library- deadlines are soon.
+Exits: east north west
+You have lost Redbull from your inventory!
+> player
+Player name : McCoy
+Player score : 30
+Player energy : 130
+
+> 
