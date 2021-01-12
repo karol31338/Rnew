@@ -63,8 +63,10 @@ public class Game
             Command command = parser.getCommand();
             finished = processCommand(command);
             if(player.getEnergy() <= 0)
+            {
                 System.out.println("***YOU LOST!***");
                 finished = true;
+            }
             if(player.getScore() >= 55 && player.getListLength() == 3 && currentRoom == map.getHome())
             {
                 System.out.println("***YOU WIN!***");

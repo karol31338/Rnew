@@ -1,0 +1,18 @@
+Welcome to the World of Zuul!
+World of Zuul is a new, incredibly boring adventure game.
+Type 'help' if you need help.
+
+Hey, in this room you start the game- it is your home.
+Exits: east north west
+> go east
+Hey, in this room you will need study a little- Hello Uni.
+Exits: east south north west
+> go east
+Hey, in this room you will visit park to rest after a long day.
+Exits: south north west
+> go north
+Hey, in this room you will be working- as you need money.
+Exits: east south west
+Money has been taken
+***YOU LOST!***
+Thank you for playing.  Good bye.
