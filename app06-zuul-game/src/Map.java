@@ -25,14 +25,14 @@ public class Map
      */
     private void createRooms()
     {
-        home = new Room("you start the game- it is your home");
-        pub = new Room("it is time to chill after hard-work");
-        uni = new Room("you will need study a little- Hello Uni");
-        friendsHouse = new Room("you visit your friend's house");
-        coffeeShop = new Room("it is Time for you to take a little break and a cup of coffee");
-        work = new Room("you will be working- as you need money");
-        library = new Room("time to go to the library- deadlines are soon");
-        park = new Room("you will visit park to rest after a long day");
+        home = new Room("you start the game- it is your home", "Home");
+        pub = new Room("it is time to chill after hard-work", "Pub");
+        uni = new Room("you will need study a little- Hello Uni", "Uni");
+        friendsHouse = new Room("you visit your friend's house", "Friend's house");
+        coffeeShop = new Room("it is Time for you to take a little break and a cup of coffee", "Coffee Shop");
+        work = new Room("you will be working- as you need money", "Work");
+        library = new Room("time to go to the library- deadlines are soon", "Library");
+        park = new Room("you will visit park to rest after a long day", "Park");
 
         createHome();
         createPub();

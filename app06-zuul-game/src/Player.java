@@ -43,6 +43,11 @@ public class Player
         return energy;
     }
 
+    public int getListLength()
+    {
+        return items.size();
+    }
+
     public void inventory()
     {
         for(String item: items)
@@ -54,7 +59,7 @@ public class Player
     public void grabItem(String item)
     {
         if(items.contains(item)){
-            System.out.println("You have already had this item in your inventory!");
+            System.out.println("You have already had " + item + " in your inventory!");
             }
         else {
             items.add(item);

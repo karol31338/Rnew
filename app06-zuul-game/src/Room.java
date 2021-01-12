@@ -18,6 +18,7 @@ import java.util.HashMap;
 
 public class Room
 {
+    private String shortDescription;
     private String description;
     private HashMap<String, Room> exits;        // stores exits of this room.
 
@@ -27,9 +28,10 @@ public class Room
      * "an open court yard".
      * @param description The room's description.
      */
-    public Room(String description)
+    public Room(String description, String shortDescription)
     {
         this.description = description;
+        this.shortDescription = shortDescription;
         exits = new HashMap<>();
     }
 
@@ -49,7 +51,7 @@ public class Room
      */
     public String getShortDescription()
     {
-        return description;
+        return shortDescription;
     }
 
     /**

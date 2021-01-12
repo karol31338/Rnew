@@ -14,6 +14,7 @@ public enum CommandWord
     QUIT("quit"),
     PLAYER("player"),
     ITEMS("items"),
+    ROOM("room"),
     HELP("help"),
     UNKNOWN("?");
 
